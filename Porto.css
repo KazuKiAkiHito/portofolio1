@@ -1,0 +1,209 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Content */
+body{
+    font: 16px/28px arial, sans-serif;
+    background-image: url(dark_wood.png);
+    color: #333;
+}
+.container{
+    width: 1300px;
+    margin: auto;
+    background-color: #eaeaea;
+    border-radius: 20px;
+}
+.header{
+    padding: 20px;
+    text-align: right;
+    border-bottom: 3px solid #000;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.header ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.header ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.header ul li:hover::after {
+    width: 100%;
+}
+.main{
+    width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+.main h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.main p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    width: 400px;
+    float: right;
+    padding: 20px;
+}
+.sidebar h3{
+    font-weight: 600;
+}
+.sidebar img{
+    width: 300px;
+    margin-top: 20px;
+}
+.service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 200px 0;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.service-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.service-col a{
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.service-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/* COntact */
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.location iframe {
+    width: 100%;
+}
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div p {
+    padding: 0;
+}
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.footer{
+    background-color: #333;
+    padding: 10px; 
+}
+.footer .copy{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
